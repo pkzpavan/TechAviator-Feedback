@@ -1,0 +1,159 @@
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.cc-selector-2 input{
+    position:absolute;
+    z-index:999;
+}
+
+.unsatisfied{background-image:url(images/poor4.png);}
+.neutral{background-image:url(images/neutral4.png);}
+.good{background-image:url(images/good4.png);}
+.verygood{background-image:url(images/excellent4.png);}
+
+
+.cc-selector-2 input:active +.drinkcard-cc, .cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector-2 input:checked +.drinkcard-cc, .cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.header img.img-responsive {
+  margin-left: 40px;
+  /*margin-left: 275px;*/
+  height: 100px;
+}/*added*/
+.section {
+  background-image: url(images/tabanner1.png);
+  background-size: 100% 1000%;
+  background-repeat: no-repeat;
+}/*added*/
+.session{
+background-image: url(images/participant-feedback1.jpg);
+  background-size: 100% 115%;
+  background-repeat: no-repeat;
+}
+.drinkcard-cc{
+	  margin: 0px 15px;/*added*/
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    /*width:100px;height:70px;*/
+	width:200px;height:200px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+/* Extras */
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}
+
+
+/*codepen code .css*/
+
+/*.input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type=radio]:checked + label>img {
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px 3px #090;
+}*/
+
+/* Stuff after this is only to make things more pretty */
+/*input[type=radio] + label>img {
+  border: 1px dashed #444;
+  width: 150px;
+  height: 150px;
+  transition: 500ms all;
+}
+
+input[type=radio]:checked + label>img {
+  transform: 
+    rotateZ(-10deg) 
+    rotateX(10deg);
+}*/
+
+/*
+ | //lea.verou.me/css3patterns
+ | Because white bgs are boring.
+*/
+html {
+  /*background-color: #fff;
+  background-size: 100% 1.2em;
+  background-image: 
+    linear-gradient(
+      90deg, 
+      transparent 79px, 
+      #abced4 79px, 
+      #abced4 81px, 
+      transparent 81px
+    ),
+    linear-gradient(
+      #eee .1em, 
+      transparent .1em
+    );
+	height:auto;
+	box-sizing:border-box;*/
+}
+
+@media only screen and (min-resolution: 117dpi) and (max-resolution: 119dpi), only screen and (min-resolution: 131dpi) and (max-resolution: 133dpi), only screen and (min-resolution: 145dpi) and (max-resolution: 154dpi), only screen and (min-resolution: 162dpi) and (max-resolution: 164dpi), only screen and (min-resolution: 169dpi) {
+  /* Your touch-specific css goes here */
+  .cc-selector{
+	position:relative;
+	box-sizing:border-box;
+	display:block;
+	height:auto;
+	width:auto;  
+  }
+}
+@media only screen and (min-resolution: 165dpi) and (max-resolution: 168dpi), only screen and (min-resolution: 155dpi) and (max-resolution: 160dpi), only screen and (min-resolution: 134dpi) and (max-resolution: 144dpi), only screen and (min-resolution: 120dpi) and (max-resolution: 130dpi), only screen and (max-resolution: 116dpi) {
+  /* Your click-specific css goes here */
+
+}
+@media (min-width: 541px){
+  /* Big view stuff goes here. */
+  .cc-selector{
+	position:relative;
+	box-sizing:border-box;
+	display:block;
+	height:auto;
+	width:auto;  
+  }
+}
+@media (max-width: 540px) and (min-width: 400px){
+  /* Smaller view stuff goes here. */
+  .cc-selector{
+	position:relative;
+	box-sizing:border-box;
+	display:block;
+	height:auto;
+	width:auto;  
+  }
+}
+@media (max-width: 399px){
+  /* Stuff for really small views goes here. */
+  .cc-selector{
+	position:relative;
+	box-sizing:border-box;
+	display:block;
+	height:auto;
+	width:auto;  
+  }
+}

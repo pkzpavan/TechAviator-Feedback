@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='viewport' content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/gif" href="images/logo-2.png"/>
+<title>Feedback From</title>
+<link href="style.css" type="text/css" rel="stylesheet" />
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="section ">
+<div class="container row">
+
+<div class="header"><img src="images/final1.png" class="img-responsive"/></div>
+
+</div>
+</div><!--end of section-->
+<hr />
+<div class="session col-md-12 col-sm-12">
+<div class="container">
+<div class="row">
+<form>
+<p><h1 style="color:#fff;">Rate Us:</h1></p>
+<div class="">
+ <div class="cc-selector control-group">
+ 		<input id="visa2" type="radio" name="creditcard" value="Poor" data-toggle="tooltip" title="Please let us know why?" data-placement="top"/>
+        <label class="drinkcard-cc unsatisfied" for="visa2" value="Poor"></label>
+        <input id="mastercard2" type="radio" name="creditcard" value="Neutral" />
+        <label class="drinkcard-cc neutral"for="mastercard2" value="Neutral"></label>
+        <input id="mastercard3" type="radio" name="creditcard" value="Good" />
+        <label class="drinkcard-cc good"for="mastercard3" value="Good"></label>
+        <input id="mastercard4" type="radio" name="creditcard" value="Excellent" />
+        <label class="drinkcard-cc verygood"for="mastercard4" value="Excellent"></label>
+       
+    </div>
+    </div>
+    <br />
+     <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label><h3 style="color:#fff;">Comments...</h3></label>
+                                <!--<textarea rows="5" class="form-control" placeholder="We appreciate your comments whether it's Good/Bad" id="message" required data-validation-required-message="Please enter a message." name="textarea"></textarea>-->
+                                <textarea rows="5" class="form-control" placeholder="We appreciate your comments whether it's Good/Bad" id="message" name="textarea"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+  
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+    <input type="submit" class="btn-primary text-center" value="Submit" />
+    <input type="reset" class="btn-danger text-center" value="Reset" /> </div>
+</form>
+</div>
+    </div>
+<div id="log"></div>
+&emsp;&emsp;&emsp;
+&emsp;
+&emsp;
+<br />
+<br />
+<small style="color:#FFF;"><a href="https://www.zokotechnology.com" style="color:#fff">
+    &copy; Powered by Zoko Information Technology Pvt. Ltd.</a></small></div>
+    <script src="js/jquery.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+	$('[data-toggle="tooltip"]').tooltip(); 
+	//document.querySelector('input[name="creditcard"]:checked').value;
+	//$.trim($("textarea").val()); (or)
+	//$("#message").val();
+	/*$(document).click(function(){
+	if (document.getElementById('visa2').checked) {
+   alert( "Please Comment why we disappointed you.." );
+  //setTimeout( function ( ) { alert( "Please Comment why we disappointed you.." ); }, 10000 );
+}
+	});*/
+	</script>
+    <script>
+/*var logDiv = $( "#log" );
+ 
+for ( var i = 0; i < 4; i++ ) {
+  $( ".btn-primary" ).eq( i ).on( "click", { value: i }, function( event ) {
+    var msgs = [
+      "Rated = " + document.querySelector('input[name="creditcard"]:checked').value,
+      "Comments = " + $("#message").val(),
+      //"i = " + i
+    ];
+    logDiv.append( msgs.join( ", " ) + "<br>" );
+  });
+}*/
+</script>
+</body>
+</html>
